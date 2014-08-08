@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>MOD_SMARTWELCOME</name>
+	<author>David Hurley</author>
+	<creationDate>November 2013</creationDate>
+	<copyright>Copyright (C) 2013 David Hurley. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>david@websparkinc.com</authorEmail>
+	<authorUrl>www.websparkinc.com</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_SMARTWELCOME_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_smartwelcome">mod_smartwelcome.php</filename>
+		<folder>helper</folder>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>mod_smartwelcome.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_smartwelcome.ini</language>
+		<language tag="en-GB">language/en-GB.mod_smartwelcome.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="visit_count"
+					type="text"
+					default="0"
+					label="MOD_SMARTWELCOME_VISITCOUNT_LABEL"
+					description="MOD_SMARTWELCOME_VISITCOUNT_DESC" />
+				<field
+					name="welcome_message"
+					type="textarea"
+					default="MOD_SMARTWELCOME_DEFAULT_MESSAGE"
+					label="MOD_SMARTWELCOME_WELCOME_LABEL"
+					description="MOD_SMARTWELCOME_WELCOME_DESC" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
