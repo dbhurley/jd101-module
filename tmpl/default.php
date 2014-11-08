@@ -11,5 +11,5 @@ defined('_JEXEC') or die;
 ?>
 
 <div class="alert alert-info">
-	<?php $params->get('welcome_message'); ?>
+	<?php echo $params->get('welcome_message'); ?>
 </div>
